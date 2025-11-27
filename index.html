@@ -4,14 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nina Duchyňová | Astrophysics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-content">
-      <div>
-        <h1>Nina Duchyňová</h1>
-        <p class="tagline">Master's student in astrophysics exploring tidal disruption events and radio galaxies.</p>
+      <div class="hero">
+        <div class="hero-text">
+          <div class="hero-heading">
+            <h1>Nina Duchyňová</h1>
+            <a class="button" href="assets/CV_Nina_Duchynova.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+          <p class="tagline">First-year master's student mapping tidal disruption events and the radio galaxies.</p>
+          <p class="location-note">From Bratislava, Slovakia</p>
+          <ul class="quick-contact">
+            <li><span>Email</span><a href="mailto:nina@physics.muni.cz">nina@physics.muni.cz</a></li>
+            <li><span>Phone</span><a href="tel:+421902505721">+421&nbsp;902&nbsp;505&nbsp;721</a></li>
+            <li><span>Location</span>Brno, Czech Republic</li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/profile.jpg" alt="Nina Duchyňová" class="profile-photo">
+        </div>
       </div>
       <nav aria-label="Main">
         <ul class="nav-links">
@@ -19,10 +36,8 @@
           <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#languages">Languages</a></li>
           <li><a href="#conferences">Conferences</a></li>
           <li><a href="#volunteering">Volunteering</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -32,10 +47,12 @@
     <section id="about" class="section">
       <div class="container two-column">
         <div>
-          <h2>About</h2>
+          <h2 class="section-title">About</h2>
           <p>
-            I am a first-year master's student in astrophysics at Masaryk University, focusing my research on
-            tidal disruption events (TDEs) as a pathway to explain Little Red Dots. My bachelor's thesis was focused on compact and extended radio structures.
+            I am a first-year master's student in astrophysics at Masaryk University, focusing my research on tidal disruption events (TDEs) as a pathway to explain Little Red Dots. My bachelor's thesis was focused on compact and extended radio structures.
+          </p>
+          <p>
+            Outside of work, I’m passionate about sports and staying active. Whether it’s going to the gym, hiking, skating, skiing, or playing tennis, I’m always up for a challenge — even if it’s something I’ve never tried before. I also love going to concerts, reading, and I rarely miss a Formula 1 weekend.
           </p>
         </div>
         <aside class="highlight-card">
@@ -51,12 +68,12 @@
 
     <section id="education" class="section alt">
       <div class="container">
-        <h2>Education</h2>
+        <h2 class="section-title">Education</h2>
         <div class="timeline">
           <article class="timeline-item">
             <span class="timeline-date">2025&nbsp;&ndash;&nbsp;Present</span>
             <div>
-              <h3>Masaryk University &mdash; M.Sc. Astrophysics</h3>
+              <h3>Masaryk University &mdash; Mgr. Astrophysics</h3>
               <p>
                 Diploma thesis on tidal disruption events as a driver of Little Red Dots, supervised by
                 Dr. Isobelle Lilian Mary Garland and Dr. Michal Zajaček.
@@ -66,11 +83,14 @@
           <article class="timeline-item">
             <span class="timeline-date">2022&nbsp;&ndash;&nbsp;2025</span>
             <div>
-              <h3>Masaryk University &mdash; B.Sc. Astrophysics</h3>
+              <h3>Masaryk University &mdash; Bc. Astrophysics</h3>
               <p>
-                Thesis: Why do not all radio galaxies form extended structures?
+                <strong>Thesis:</strong>
+                <a href="assets/thesis.pdf">Why do not all radio galaxies form extended structures?</a>
+              </p>
+              <p>
                 Investigated compact and extended radio sources using self-written Python analysis
-                based on the ROGUE catalogue. Analysed host galaxy properties, luminosities, and star 
+                based on the ROGUE catalogue. Analysed host galaxy properties, luminosities, and star
                 formation rates, creating diagnostic diagrams and applying statistical tests. Utilized
                 Green Valley diagram to answer, if compact radio structures might be due to TDE.
               </p>
@@ -82,44 +102,55 @@
 
     <section id="experience" class="section">
       <div class="container">
-        <h2>Experience</h2>
-        <div class="experience-grid">
-          <article class="card">
-            <header>
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline experience-timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">Autumn 2025</span>
+            <div>
+              <h3>CSO Host Galaxy Research Project</h3>
+              <p class="meta">Masaryk University &middot; Brno, Czech Republic (in-person)</p>
+              <p>
+                Investigating luminosity profiles of galaxies hosting compact symmetric radio sources using HST archival imaging and GALFIT modelling to probe potential links to tidal disruption events. Built the workflow by independently adopting IRAF, GALFIT, TinyTim, and DCR for data reduction and fitting.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-date">July 2025 &ndash; September 2025</span>
+            <div>
               <h3>Research Intern</h3>
-              <p class="meta">Nicolaus Copernicus Astronomical Center, Polish Academy of Sciences &middot; July 2023 &ndash; September 2025</p>
-              <p class="location">Warsaw, Poland (present)</p>
-            </header>
-            <p>
-              Investigating the possible existence of primordial black holes with Prof. Marek Abramowicz and Dr. Maciek Wielgus.
-              Conducted literature review, refined a Python population synthesis code, and carried out calculations on neutron star
-              collision scenarios.
-            </p>
+              <p class="meta">Nicolaus Copernicus Astronomical Center, Polish Academy of Sciences &middot; Warsaw, Poland (in-person)</p>
+              <p>
+                Investigating the possible existence of primordial black holes with Prof. Marek Abramowicz and Dr. Maciek Wielgus.
+                Conducted literature review, refined a Python population synthesis code, and carried out calculations on neutron star
+                collision scenarios.
+              </p>
+            </div>
           </article>
 
-          <article class="card">
-            <header>
+          <article class="timeline-item">
+            <span class="timeline-date">September 2023 &ndash; Present</span>
+            <div>
               <h3>Outreach &amp; Events Assistant</h3>
-              <p class="meta">Faculty of Science, Masaryk University &middot; September 2023 &ndash; Present</p>
-              <p class="location">Brno, Czech Republic</p>
-            </header>
-            <p>
-              Coordinated and delivered science communication at Researchers’ Night, Science and Technology Festival,
-              Open Day, Gaudeamus, and more. Supported the production of podcast <em>Rozhovory o vesmíre</em> with background research
-              and editing, and led astronomy workshops for youth programs including MjUNI.
-            </p>
+              <p class="meta">Faculty of Science, Masaryk University &middot; Brno, Czech Republic</p>
+              <p>
+                Coordinated and delivered science communication at Researchers’ Night, Science and Technology Festival,
+                Open Day, Gaudeamus, and more. Supported the production of podcast <em>Rozhovory o vesmíre</em> with background research
+                and editing, and led astronomy workshops for youth programs including MjUNI.
+              </p>
+            </div>
           </article>
 
-          <article class="card">
-            <header>
+          <article class="timeline-item">
+            <span class="timeline-date">September 2019 &ndash; August 2021</span>
+            <div>
               <h3>Customer Service Assistant</h3>
-              <p class="meta">Panta Rhei s.r.o. &middot; September 2019 &ndash; August 2021</p>
-              <p class="location">Bratislava, Slovakia</p>
-            </header>
-            <p>
-              Delivered front-line customer care, resolved issues, and maintained an engaging, well-organised bookstore
-              environment while tailoring recommendations to individual readers.
-            </p>
+              <p class="meta">Panta Rhei s.r.o. &middot; Bratislava, Slovakia</p>
+              <p>
+                Delivered front-line customer care, resolved issues, and maintained an engaging, well-organised bookstore
+                environment while tailoring recommendations to individual readers.
+              </p>
+            </div>
           </article>
         </div>
       </div>
@@ -127,7 +158,7 @@
 
     <section id="skills" class="section alt">
       <div class="container">
-        <h2>Skills</h2>
+        <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
           <div>
             <h3>Programming &amp; Data</h3>
@@ -139,7 +170,7 @@
           <div>
             <h3>Tools</h3>
             <ul>
-              <li>LaTeX, Jupyter Notebook, Visual Studio Code</li>
+              <li>LaTeX, Jupyter Notebook, Visual Studio Code, Conda</li>
               <li>Ubuntu, SAOImage DS9, IRAF, GALFIT, QtiPlot, TOPCAT, DCR, TinyTim</li>
               <li>Microsoft Excel &amp; Word, Canva</li>
             </ul>
@@ -156,21 +187,9 @@
       </div>
     </section>
 
-    <section id="languages" class="section">
-      <div class="container">
-        <h2>Languages</h2>
-        <ul class="language-list">
-          <li><strong>Slovak:</strong> Native</li>
-          <li><strong>Czech:</strong> Native / Bilingual</li>
-          <li><strong>English:</strong> Full professional</li>
-          <li><strong>German:</strong> Elementary</li>
-        </ul>
-      </div>
-    </section>
-
     <section id="conferences" class="section alt">
       <div class="container">
-        <h2>Conferences</h2>
+        <h2 class="section-title">Conferences</h2>
         <div class="timeline">
           <article class="timeline-item">
             <span class="timeline-date">15.-16. April 2023</span>
@@ -192,7 +211,7 @@
 
     <section id="volunteering" class="section">
       <div class="container">
-        <h2>Volunteering</h2>
+        <h2 class="section-title">Volunteering</h2>
         <div class="timeline">
           <article class="timeline-item">
             <span class="timeline-date">May 2024</span>
@@ -214,22 +233,6 @@
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container two-column contact-section">
-        <div>
-          <h2>Contact</h2>
-          <p>
-            Keen to collaborate on transient phenomena, public outreach, or data-driven astrophysics projects.
-            Feel free to reach out via email or follow along on upcoming research updates.
-          </p>
-        </div>
-        <ul class="contact-list">
-          <li><span>Email</span><a href="mailto:nina@physics.muni.cz">nina@physics.muni.cz</a></li>
-          <li><span>Phone</span><a href="tel:+421902505721">+421&nbsp;902&nbsp;505&nbsp;721</a></li>
-          <li><span>Location</span>Bratislava, Slovakia</li>
-        </ul>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
