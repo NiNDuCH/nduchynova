@@ -724,6 +724,43 @@ h1 {
   }
 }
 
+@media (max-width: 720px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+
+  .site-header {
+    position: static;
+    top: auto;
+    box-shadow: 0 8px 18px rgba(3, 8, 26, 0.35);
+  }
+
+  .header-content {
+    padding: 1.4rem 0 1.6rem;
+  }
+
+  .hero {
+    gap: 1.6rem;
+  }
+
+  .hero-text {
+    padding: 1.6rem;
+  }
+
+  .hero-visual {
+    padding: 0.85rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .section {
+    scroll-margin-top: 72px;
+  }
+}
+
 @media (max-width: 700px) {
   .timeline {
     padding-left: 0;
