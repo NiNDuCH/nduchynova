@@ -19,7 +19,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: clamp(100px, 16vh, 160px);
+  scroll-padding-top: 72px;
   background-color: #050a1a;
   position: relative;
 }
@@ -155,8 +155,8 @@ a:focus {
 .site-header {
   background: rgba(8, 13, 32, 0.82);
   border-bottom: 1px solid rgba(103, 200, 255, 0.18);
-  position: sticky;
-  top: 0;
+  position: relative;
+  top: auto;
   z-index: 100;
   backdrop-filter: blur(14px);
   box-shadow: 0 12px 24px rgba(3, 8, 26, 0.45);
@@ -702,6 +702,17 @@ h1 {
   pointer-events: none;
 }
 
+@media (min-width: 1024px) {
+  html {
+    scroll-padding-top: clamp(100px, 16vh, 160px);
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .hero {
     justify-content: center;
@@ -725,10 +736,6 @@ h1 {
 }
 
 @media (max-width: 720px) {
-  html {
-    scroll-padding-top: 72px;
-  }
-
   .site-header {
     position: static;
     top: auto;
